@@ -2,6 +2,8 @@
 apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
 kind: Accelerator
 metadata:
+  labels:
+    accelerator.apps.tanzu.vmware.com/category: platform
   name: tap-initialize
 spec:
   git:
