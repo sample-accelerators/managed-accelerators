@@ -1,15 +1,13 @@
 apiVersion: kappctrl.k14s.io/v1alpha1
 kind: App
 metadata:
-  labels:
-    accelerator.apps.tanzu.vmware.com/category: platform
-  name: managed-platform-accelerators
+  name: managed-accelerators
 spec:
   serviceAccountName: accelerator-managed-resources
 
   fetch:
   - git:
-      url: https://github.com/sample-accelerators/managed-platform
+      url: https://github.com/sample-accelerators/managed-accelerators
       ref: origin/main
       subPath: resources
 
